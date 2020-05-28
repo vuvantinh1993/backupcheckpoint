@@ -80,8 +80,16 @@ namespace backupckeckpoint
                 {
                     File.Create(ural);
                 }
-                System.IO.File.WriteAllText(ural, listUIDName.ToString());
+                var str = taoFileBackUp(listUIDName);
+                System.IO.File.WriteAllText(ural, str);
             }
+        }
+
+        public string taoFileBackUp(List<UidAndName> listUiD)
+        {
+            var str = "<!DOCTYPE html> <html lang = \"en\" ><head><meta charset = \"UTF-8\" ><meta name = \"viewport\" content = \"width=device-width, initial-scale=1.0\"><script src = \"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script> <title> Document </title></head>";
+            str = str + "<body></body></html>";
+            return str;
         }
     }
 

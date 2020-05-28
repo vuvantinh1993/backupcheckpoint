@@ -12,3 +12,17 @@ C:\Users\TINHVU\Desktop\checkpointfb\backupckeckpoint\obj\Debug\backupckeckpoint
 C:\Users\TINHVU\Desktop\checkpointfb\backupckeckpoint\obj\Debug\backupckeckpoint.csproj.GenerateResource.cache
 C:\Users\TINHVU\Desktop\checkpointfb\backupckeckpoint\obj\Debug\backupckeckpoint.exe
 C:\Users\TINHVU\Desktop\checkpointfb\backupckeckpoint\obj\Debug\backupckeckpoint.pdb
+C:\Users\TINHVU\Desktop\backupcheckpoint\bin\Debug\backupckeckpoint.exe.config
+C:\Users\TINHVU\Desktop\backupcheckpoint\bin\Debug\backupckeckpoint.exe
+C:\Users\TINHVU\Desktop\backupcheckpoint\bin\Debug\backupckeckpoint.pdb
+C:\Users\TINHVU\Desktop\backupcheckpoint\obj\Debug\backupckeckpoint.csprojAssemblyReference.cache
+C:\Users\TINHVU\Desktop\backupcheckpoint\obj\Debug\MainWindow.g.cs
+C:\Users\TINHVU\Desktop\backupcheckpoint\obj\Debug\App.g.cs
+C:\Users\TINHVU\Desktop\backupcheckpoint\obj\Debug\backupckeckpoint_MarkupCompile.cache
+C:\Users\TINHVU\Desktop\backupcheckpoint\obj\Debug\backupckeckpoint_MarkupCompile.lref
+C:\Users\TINHVU\Desktop\backupcheckpoint\obj\Debug\MainWindow.baml
+C:\Users\TINHVU\Desktop\backupcheckpoint\obj\Debug\backupckeckpoint.g.resources
+C:\Users\TINHVU\Desktop\backupcheckpoint\obj\Debug\backupckeckpoint.Properties.Resources.resources
+C:\Users\TINHVU\Desktop\backupcheckpoint\obj\Debug\backupckeckpoint.csproj.GenerateResource.cache
+C:\Users\TINHVU\Desktop\backupcheckpoint\obj\Debug\backupckeckpoint.exe
+C:\Users\TINHVU\Desktop\backupcheckpoint\obj\Debug\backupckeckpoint.pdb
