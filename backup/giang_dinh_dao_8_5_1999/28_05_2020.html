@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+ <html lang = "en" >
+<head>
+ <meta charset = "UTF-8" ><meta name = "viewport" content = "width=device-width, initial-scale=1.0"> 
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <title> Document </title></head>
+<body>145bạn bè <br><textarea id="userName" rows="4" cols="50"> </textarea> 
+<button onclick="laygiatri()">Tìm kiếm</button>
+<div class="user">
+<img src="http://graph.facebook.com/100008772693948/picture?type=large">
+<a href="https://www.facebook.com/100008772693948" target="_blank" class="tinh">Phạm Hùng</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100011133404065/picture?type=large">
+<a href="https://www.facebook.com/100011133404065" target="_blank" class="tinh">Sơn Hoàng</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100048083178986/picture?type=large">
+<a href="https://www.facebook.com/100048083178986" target="_blank" class="tinh">Vinh Phạm Văn</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049568193466/picture?type=large">
+<a href="https://www.facebook.com/100049568193466" target="_blank" class="tinh">Huynh Chan Hoang</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100029227871204/picture?type=large">
+<a href="https://www.facebook.com/100029227871204" target="_blank" class="tinh">Leo Thái Tử</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100048840166753/picture?type=large">
+<a href="https://www.facebook.com/100048840166753" target="_blank" class="tinh">Vũ Tỉnh Tám</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100048863865324/picture?type=large">
+<a href="https://www.facebook.com/100048863865324" target="_blank" class="tinh">Vũ Tỉnh Bảy</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100026053782081/picture?type=large">
+<a href="https://www.facebook.com/100026053782081" target="_blank" class="tinh">Hưng Lê</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100027294830101/picture?type=large">
+<a href="https://www.facebook.com/100027294830101" target="_blank" class="tinh">Hương Huyền Đào</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100035160730111/picture?type=large">
+<a href="https://www.facebook.com/100035160730111" target="_blank" class="tinh">Siêu Học</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100050255113753/picture?type=large">
+<a href="https://www.facebook.com/100050255113753" target="_blank" class="tinh">Phạm Long Anh</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100020369347226/picture?type=large">
+<a href="https://www.facebook.com/100020369347226" target="_blank" class="tinh">Hữu Tình</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100015430659172/picture?type=large">
+<a href="https://www.facebook.com/100015430659172" target="_blank" class="tinh">Dương Tiến Dũng</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100033215657260/picture?type=large">
+<a href="https://www.facebook.com/100033215657260" target="_blank" class="tinh">Duy Bảnh</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100035905387262/picture?type=large">
+<a href="https://www.facebook.com/100035905387262" target="_blank" class="tinh">Đặng Đồng</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049584572600/picture?type=large">
+<a href="https://www.facebook.com/100049584572600" target="_blank" class="tinh">An Gia Do</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049609741415/picture?type=large">
+<a href="https://www.facebook.com/100049609741415" target="_blank" class="tinh">Manh Tri Ngo</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049330183538/picture?type=large">
+<a href="https://www.facebook.com/100049330183538" target="_blank" class="tinh">Minh Cong Bui</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100015792459342/picture?type=large">
+<a href="https://www.facebook.com/100015792459342" target="_blank" class="tinh">Quang Linh</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100048977199761/picture?type=large">
+<a href="https://www.facebook.com/100048977199761" target="_blank" class="tinh">Vũ Tỉnh Năm</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049767309142/picture?type=large">
+<a href="https://www.facebook.com/100049767309142" target="_blank" class="tinh">Hưng Tiên Sinh</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100009847634175/picture?type=large">
+<a href="https://www.facebook.com/100009847634175" target="_blank" class="tinh">Van Khanh</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049708235998/picture?type=large">
+<a href="https://www.facebook.com/100049708235998" target="_blank" class="tinh">Bảo Cô Lô Nhuê</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100047520950089/picture?type=large">
+<a href="https://www.facebook.com/100047520950089" target="_blank" class="tinh">Sandra Thomos</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100048843501989/picture?type=large">
+<a href="https://www.facebook.com/100048843501989" target="_blank" class="tinh">Ánh Tuyết</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100043851572454/picture?type=large">
+<a href="https://www.facebook.com/100043851572454" target="_blank" class="tinh">Phi Thiên Phong</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100029097680272/picture?type=large">
+<a href="https://www.facebook.com/100029097680272" target="_blank" class="tinh">An Nguyen</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100048894163177/picture?type=large">
+<a href="https://www.facebook.com/100048894163177" target="_blank" class="tinh">Vũ Tỉnh Bốn</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100041279241420/picture?type=large">
+<a href="https://www.facebook.com/100041279241420" target="_blank" class="tinh">Nam Trungg</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100037728162257/picture?type=large">
+<a href="https://www.facebook.com/100037728162257" target="_blank" class="tinh">Dũng Phạm</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049471726045/picture?type=large">
+<a href="https://www.facebook.com/100049471726045" target="_blank" class="tinh">Thu Ngân</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100008645588067/picture?type=large">
+<a href="https://www.facebook.com/100008645588067" target="_blank" class="tinh">Hậu Toni</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100043668642471/picture?type=large">
+<a href="https://www.facebook.com/100043668642471" target="_blank" class="tinh">Đức Huy</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100047225123197/picture?type=large">
+<a href="https://www.facebook.com/100047225123197" target="_blank" class="tinh">Trong Nguyen</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100032881625848/picture?type=large">
+<a href="https://www.facebook.com/100032881625848" target="_blank" class="tinh">Tony Hoàng</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100047346378757/picture?type=large">
+<a href="https://www.facebook.com/100047346378757" target="_blank" class="tinh">Ngọc Ánh</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100047809598638/picture?type=large">
+<a href="https://www.facebook.com/100047809598638" target="_blank" class="tinh">Hà Phúc</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100048809087895/picture?type=large">
+<a href="https://www.facebook.com/100048809087895" target="_blank" class="tinh">Tỉnh Mười Một</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049194168956/picture?type=large">
+<a href="https://www.facebook.com/100049194168956" target="_blank" class="tinh">Do Duc Phung</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100017005813652/picture?type=large">
+<a href="https://www.facebook.com/100017005813652" target="_blank" class="tinh">Doan Nguyen</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049036846818/picture?type=large">
+<a href="https://www.facebook.com/100049036846818" target="_blank" class="tinh">Nhà Đất Chí Linh</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100011350693552/picture?type=large">
+<a href="https://www.facebook.com/100011350693552" target="_blank" class="tinh">Nguyen Van</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100005839991255/picture?type=large">
+<a href="https://www.facebook.com/100005839991255" target="_blank" class="tinh">Thùy Dương Phạm</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100004356856792/picture?type=large">
+<a href="https://www.facebook.com/100004356856792" target="_blank" class="tinh">Hương Lê</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100032889585506/picture?type=large">
+<a href="https://www.facebook.com/100032889585506" target="_blank" class="tinh">Đỗ Tiến Thuý</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100008104987964/picture?type=large">
+<a href="https://www.facebook.com/100008104987964" target="_blank" class="tinh">Đào Bằng</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100025136950486/picture?type=large">
+<a href="https://www.facebook.com/100025136950486" target="_blank" class="tinh">Nguyễn Đức</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100010117564574/picture?type=large">
+<a href="https://www.facebook.com/100010117564574" target="_blank" class="tinh">Khanh Bui</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100001529236847/picture?type=large">
+<a href="https://www.facebook.com/100001529236847" target="_blank" class="tinh">Manh Pho Dinh</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100025608705158/picture?type=large">
+<a href="https://www.facebook.com/100025608705158" target="_blank" class="tinh">Trung Tín</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100043325242355/picture?type=large">
+<a href="https://www.facebook.com/100043325242355" target="_blank" class="tinh">Nhi Hong</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049806152094/picture?type=large">
+<a href="https://www.facebook.com/100049806152094" target="_blank" class="tinh">Khuất Duy Tú</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100040473582885/picture?type=large">
+<a href="https://www.facebook.com/100040473582885" target="_blank" class="tinh">Mai Trang</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100035656908108/picture?type=large">
+<a href="https://www.facebook.com/100035656908108" target="_blank" class="tinh">Phunganhphunganh</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100033580581313/picture?type=large">
+<a href="https://www.facebook.com/100033580581313" target="_blank" class="tinh">Thu Đập Đá</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100045740796200/picture?type=large">
+<a href="https://www.facebook.com/100045740796200" target="_blank" class="tinh">Phạm Tuấn</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100010220380154/picture?type=large">
+<a href="https://www.facebook.com/100010220380154" target="_blank" class="tinh">Jonny Phạm</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100019383701008/picture?type=large">
+<a href="https://www.facebook.com/100019383701008" target="_blank" class="tinh">Trường Nguyễn</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100050162833831/picture?type=large">
+<a href="https://www.facebook.com/100050162833831" target="_blank" class="tinh">Hải Nguyễn</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100047357445800/picture?type=large">
+<a href="https://www.facebook.com/100047357445800" target="_blank" class="tinh">Trần Ngọc Đan</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100041279379505/picture?type=large">
+<a href="https://www.facebook.com/100041279379505" target="_blank" class="tinh">Lê Khả Vịnh</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100034709795330/picture?type=large">
+<a href="https://www.facebook.com/100034709795330" target="_blank" class="tinh">Lê Ngọc Hiếu</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100051242197459/picture?type=large">
+<a href="https://www.facebook.com/100051242197459" target="_blank" class="tinh">Cong Danh Mai</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100050911793686/picture?type=large">
+<a href="https://www.facebook.com/100050911793686" target="_blank" class="tinh">Sơn Hoàng</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100050763638822/picture?type=large">
+<a href="https://www.facebook.com/100050763638822" target="_blank" class="tinh">Đinh Nguyễn Quân</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100050304342886/picture?type=large">
+<a href="https://www.facebook.com/100050304342886" target="_blank" class="tinh">Trong Nguyen</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100050139726426/picture?type=large">
+<a href="https://www.facebook.com/100050139726426" target="_blank" class="tinh">Nay Yam</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049995438095/picture?type=large">
+<a href="https://www.facebook.com/100049995438095" target="_blank" class="tinh">Quyên Phi</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049988956964/picture?type=large">
+<a href="https://www.facebook.com/100049988956964" target="_blank" class="tinh">Thiện Nguyễn</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049898707499/picture?type=large">
+<a href="https://www.facebook.com/100049898707499" target="_blank" class="tinh">Nguyễn Nguyễn</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049773991227/picture?type=large">
+<a href="https://www.facebook.com/100049773991227" target="_blank" class="tinh">Trần Văn Khánh</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049691316459/picture?type=large">
+<a href="https://www.facebook.com/100049691316459" target="_blank" class="tinh">Hiền Nhân</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049448719061/picture?type=large">
+<a href="https://www.facebook.com/100049448719061" target="_blank" class="tinh">Hoai Nam</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049375834335/picture?type=large">
+<a href="https://www.facebook.com/100049375834335" target="_blank" class="tinh">Trai Họ Nguyễn</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049370798279/picture?type=large">
+<a href="https://www.facebook.com/100049370798279" target="_blank" class="tinh">Văn Phúc</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049343683316/picture?type=large">
+<a href="https://www.facebook.com/100049343683316" target="_blank" class="tinh">Lam Nguyen</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049253981523/picture?type=large">
+<a href="https://www.facebook.com/100049253981523" target="_blank" class="tinh">Phước Thịnh</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049224257242/picture?type=large">
+<a href="https://www.facebook.com/100049224257242" target="_blank" class="tinh">Vo Nam Mai</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049207140106/picture?type=large">
+<a href="https://www.facebook.com/100049207140106" target="_blank" class="tinh">Dinh Le</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049197581671/picture?type=large">
+<a href="https://www.facebook.com/100049197581671" target="_blank" class="tinh">Hoang Tu Lê</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100049009052267/picture?type=large">
+<a href="https://www.facebook.com/100049009052267" target="_blank" class="tinh">Sushan Bhangy</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100048715865288/picture?type=large">
+<a href="https://www.facebook.com/100048715865288" target="_blank" class="tinh">Lê Họ Hạnh</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100048598891141/picture?type=large">
+<a href="https://www.facebook.com/100048598891141" target="_blank" class="tinh">Trần Đức Dành</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100048569584956/picture?type=large">
+<a href="https://www.facebook.com/100048569584956" target="_blank" class="tinh">Phan Yumi</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100048388894146/picture?type=large">
+<a href="https://www.facebook.com/100048388894146" target="_blank" class="tinh">Khanh Duong</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100048370780187/picture?type=large">
+<a href="https://www.facebook.com/100048370780187" target="_blank" class="tinh">Đak Ó Ui</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100048358098414/picture?type=large">
+<a href="https://www.facebook.com/100048358098414" target="_blank" class="tinh">Cuội Đức</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100048185234231/picture?type=large">
+<a href="https://www.facebook.com/100048185234231" target="_blank" class="tinh">Minh Kiet</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100048178025409/picture?type=large">
+<a href="https://www.facebook.com/100048178025409" target="_blank" class="tinh">Nguyễn Minh Tân</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100048157552147/picture?type=large">
+<a href="https://www.facebook.com/100048157552147" target="_blank" class="tinh">Maslino Maslino</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100048145962859/picture?type=large">
+<a href="https://www.facebook.com/100048145962859" target="_blank" class="tinh">ကိုကိုကျော်</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100047992071449/picture?type=large">
+<a href="https://www.facebook.com/100047992071449" target="_blank" class="tinh">Hùng Hùng Võ</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100047473262846/picture?type=large">
+<a href="https://www.facebook.com/100047473262846" target="_blank" class="tinh">Jobilux DS</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100046878077053/picture?type=large">
+<a href="https://www.facebook.com/100046878077053" target="_blank" class="tinh">Hào Hải Dương</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100046288356949/picture?type=large">
+<a href="https://www.facebook.com/100046288356949" target="_blank" class="tinh">Hương Thanh Cao</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100045969376445/picture?type=large">
+<a href="https://www.facebook.com/100045969376445" target="_blank" class="tinh">Olatunde Suhibu</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100045529518227/picture?type=large">
+<a href="https://www.facebook.com/100045529518227" target="_blank" class="tinh">Đặng Uyển Khanh</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100045241243058/picture?type=large">
+<a href="https://www.facebook.com/100045241243058" target="_blank" class="tinh">Tam Nguyen</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100044741012703/picture?type=large">
+<a href="https://www.facebook.com/100044741012703" target="_blank" class="tinh">Max Đô</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100044048596255/picture?type=large">
+<a href="https://www.facebook.com/100044048596255" target="_blank" class="tinh">Dương Long</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100043950880998/picture?type=large">
+<a href="https://www.facebook.com/100043950880998" target="_blank" class="tinh">Mùi Văn</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100043800470871/picture?type=large">
+<a href="https://www.facebook.com/100043800470871" target="_blank" class="tinh">Huy Nguyễn</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100043437936847/picture?type=large">
+<a href="https://www.facebook.com/100043437936847" target="_blank" class="tinh">M Irfan M Irfan</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100043401648763/picture?type=large">
+<a href="https://www.facebook.com/100043401648763" target="_blank" class="tinh">Trần Văn Diềm</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100043241381059/picture?type=large">
+<a href="https://www.facebook.com/100043241381059" target="_blank" class="tinh">Kha Dâu</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100042720533552/picture?type=large">
+<a href="https://www.facebook.com/100042720533552" target="_blank" class="tinh">Trai Làng</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100042698199896/picture?type=large">
+<a href="https://www.facebook.com/100042698199896" target="_blank" class="tinh">Ân Thiên</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100042346723567/picture?type=large">
+<a href="https://www.facebook.com/100042346723567" target="_blank" class="tinh">Mai Duc</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100042077648698/picture?type=large">
+<a href="https://www.facebook.com/100042077648698" target="_blank" class="tinh">Nguyễn Ngân</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100041881457902/picture?type=large">
+<a href="https://www.facebook.com/100041881457902" target="_blank" class="tinh">Cuong Nguyen</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100041523638727/picture?type=large">
+<a href="https://www.facebook.com/100041523638727" target="_blank" class="tinh">Trần Vĩnh Kỳ</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100040916176887/picture?type=large">
+<a href="https://www.facebook.com/100040916176887" target="_blank" class="tinh">Phong Henry</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100040773234376/picture?type=large">
+<a href="https://www.facebook.com/100040773234376" target="_blank" class="tinh">ConTrai ThầnGió</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100040482368366/picture?type=large">
+<a href="https://www.facebook.com/100040482368366" target="_blank" class="tinh">Trần Tính</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100039571489950/picture?type=large">
+<a href="https://www.facebook.com/100039571489950" target="_blank" class="tinh">Quy Vo</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100037697329552/picture?type=large">
+<a href="https://www.facebook.com/100037697329552" target="_blank" class="tinh">Idol Giới TRẻ</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100036226722322/picture?type=large">
+<a href="https://www.facebook.com/100036226722322" target="_blank" class="tinh">Thao Nguyen</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100036080731606/picture?type=large">
+<a href="https://www.facebook.com/100036080731606" target="_blank" class="tinh">Vũ Cẩn</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100035118943148/picture?type=large">
+<a href="https://www.facebook.com/100035118943148" target="_blank" class="tinh">Ngọc Hải</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100034477800546/picture?type=large">
+<a href="https://www.facebook.com/100034477800546" target="_blank" class="tinh">Trần Quang</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100034446435768/picture?type=large">
+<a href="https://www.facebook.com/100034446435768" target="_blank" class="tinh">Triệu Đình Dương</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100033953225627/picture?type=large">
+<a href="https://www.facebook.com/100033953225627" target="_blank" class="tinh">Vũ Cảnh</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100032491792910/picture?type=large">
+<a href="https://www.facebook.com/100032491792910" target="_blank" class="tinh">Phạm Tuấn Kiệt</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100030794120580/picture?type=large">
+<a href="https://www.facebook.com/100030794120580" target="_blank" class="tinh">Quang Bình</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100029455699574/picture?type=large">
+<a href="https://www.facebook.com/100029455699574" target="_blank" class="tinh">Trần Vũ</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100028008608437/picture?type=large">
+<a href="https://www.facebook.com/100028008608437" target="_blank" class="tinh">Tiểu's Nhị's</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100027618606306/picture?type=large">
+<a href="https://www.facebook.com/100027618606306" target="_blank" class="tinh">Quang Phú</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100026100519103/picture?type=large">
+<a href="https://www.facebook.com/100026100519103" target="_blank" class="tinh">Minh Phuong</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100021158031443/picture?type=large">
+<a href="https://www.facebook.com/100021158031443" target="_blank" class="tinh">Chitam Phamchi</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100014002938446/picture?type=large">
+<a href="https://www.facebook.com/100014002938446" target="_blank" class="tinh">Trần Hữu Thành</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100012164594505/picture?type=large">
+<a href="https://www.facebook.com/100012164594505" target="_blank" class="tinh">Haland Linh</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100011626203412/picture?type=large">
+<a href="https://www.facebook.com/100011626203412" target="_blank" class="tinh">Hồ Công Hùng</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100011486283197/picture?type=large">
+<a href="https://www.facebook.com/100011486283197" target="_blank" class="tinh">Aslam Safi</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100009464567860/picture?type=large">
+<a href="https://www.facebook.com/100009464567860" target="_blank" class="tinh">Mỏ nết Cờ lê</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100009190663842/picture?type=large">
+<a href="https://www.facebook.com/100009190663842" target="_blank" class="tinh">Hải Nam</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100008858504082/picture?type=large">
+<a href="https://www.facebook.com/100008858504082" target="_blank" class="tinh">Trần Tuấn Hiển</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100008081449501/picture?type=large">
+<a href="https://www.facebook.com/100008081449501" target="_blank" class="tinh">My Tran</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100006883748542/picture?type=large">
+<a href="https://www.facebook.com/100006883748542" target="_blank" class="tinh">Quan Ngo</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100006765782077/picture?type=large">
+<a href="https://www.facebook.com/100006765782077" target="_blank" class="tinh">Yeu Maiemthoi</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100005924105545/picture?type=large">
+<a href="https://www.facebook.com/100005924105545" target="_blank" class="tinh">Trịnh Quốc Huy</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100005631579467/picture?type=large">
+<a href="https://www.facebook.com/100005631579467" target="_blank" class="tinh">Tùng Hà Thanh</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100004301018793/picture?type=large">
+<a href="https://www.facebook.com/100004301018793" target="_blank" class="tinh">Tran Anh Tuan</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100003926353881/picture?type=large">
+<a href="https://www.facebook.com/100003926353881" target="_blank" class="tinh">Nguyễn Đình Hậu</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100002522240485/picture?type=large">
+<a href="https://www.facebook.com/100002522240485" target="_blank" class="tinh">JusCavalis Cris</a>
+</div>
+<div class="user">
+<img src="http://graph.facebook.com/100002082526334/picture?type=large">
+<a href="https://www.facebook.com/100002082526334" target="_blank" class="tinh">Thong Do</a>
+</div>
+<script>function laygiatri() {
+var input = $('#userName').val();
+if (bodau(input) != '') {
+var listUserFind = input.split('\n');
+var listUserFindTrim = [];
+for (let i = 0; i < listUserFind.length; i++) {
+listUserFindTrim.push(bodau(listUserFind[i]).toUpperCase(0));
+}
+var listUser = $('.user').attr("hidden", true);
+var list = $('.user').find('.tinh');
+for (let i = 0; i < list.length; i++) {
+if (listUserFindTrim.includes(bodau(list[i].textContent).toUpperCase())) {
+listUser[i].removeAttribute('hidden')
+}
+}
+} else {
+var listUser = $('.user').removeAttr("hidden");
+}
+}
+function bodau(str) {
+str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
+ str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
+ str = str.replace(/ì|í|ị|ỉ|ĩ/g, "i");
+str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, "o");
+str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u");
+str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y");
+str = str.replace(/đ/g, "d");
+str = str.replace(/À|Á|Ạ|Ả|Ã|Â|Ầ|Ấ|Ậ|Ẩ|Ẫ|Ă|Ằ|Ắ|Ặ|Ẳ|Ẵ/g, "A");
+ str = str.replace(/È|É|Ẹ|Ẻ|Ẽ|Ê|Ề|Ế|Ệ|Ể|Ễ/g, "E");
+str = str.replace(/Ì|Í|Ị|Ỉ|Ĩ/g, "I");
+str = str.replace(/Ò|Ó|Ọ|Ỏ|Õ|Ô|Ồ|Ố|Ộ|Ổ|Ỗ|Ơ|Ờ|Ớ|Ợ|Ở|Ỡ/g, "O");
+str = str.replace(/Ù|Ú|Ụ|Ủ|Ũ|Ư|Ừ|Ứ|Ự|Ử|Ữ/g, "U");
+str = str.replace(/Ỳ|Ý|Ỵ|Ỷ|Ỹ/g, "Y");
+str = str.replace(/Đ/g, "D");
+str = str.replace(/̀|́|̃|̉|̣/g, "");
+str = str.replace(/ˆ|̆|̛/g, "");
+ str = str.replace(/\s+/g, '');
+return str;
+ }
+ </script>
+</body>
+</html>

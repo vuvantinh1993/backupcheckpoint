@@ -78,10 +78,13 @@ namespace backupckeckpoint
 
                 if (!File.Exists(ural))
                 {
-                    File.Create(ural);
+                    var file = File.Create(ural);
+                    file.Close();
                 }
                 var str = taoFileBackUp(listUIDName);
                 System.IO.File.WriteAllText(ural, str);
+                File.Open(ural, FileMode.Open);
+                System.Windows.MessageBox.Show("oke! đang tạo file");
             }
         }
 
@@ -93,6 +96,7 @@ namespace backupckeckpoint
                 " <title> Document </title>" +
                 "</head>\n";
             str = str + "<body>" +
+                 listUiD.Count() + "bạn bè <br>" +
                  "<textarea id=\"userName\" rows=\"4\" cols=\"50\"> </textarea> \n" +
                  "<button onclick=\"laygiatri()\">Tìm kiếm</button>\n";
 
@@ -106,10 +110,11 @@ namespace backupckeckpoint
 
 
             // ddoanj scrip
-            str = str + "function laygiatri() {\n" +
+            str = str + "<script>" +
+                "function laygiatri() {\n" +
                 "var input = $('#userName').val();" + "\n" +
                 "if (bodau(input) != '') {" + "\n" +
-                "var listUserFind = input.split('\n');" + "\n" +
+                "var listUserFind = input.split('\\n');" + "\n" +
                 "var listUserFindTrim = [];" + "\n" +
                 "for (let i = 0; i < listUserFind.length; i++) {" + "\n" +
                 "listUserFindTrim.push(bodau(listUserFind[i]).toUpperCase(0));" + "\n" +
@@ -125,6 +130,29 @@ namespace backupckeckpoint
                 "var listUser = $('.user').removeAttr(\"hidden\");" + "\n" +
                 "}" + "\n" +
                 "}" + "\n";
+
+            str = str + "function bodau(str) {" + "\n" +
+                "str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, \"a\");" + "\n" +
+                " str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, \"e\");" + "\n" +
+                " str = str.replace(/ì|í|ị|ỉ|ĩ/g, \"i\");" + "\n" +
+                "str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, \"o\");" + "\n" +
+                "str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, \"u\");" + "\n" +
+                "str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, \"y\");" + "\n" +
+                "str = str.replace(/đ/g, \"d\");" + "\n" +
+                "str = str.replace(/À|Á|Ạ|Ả|Ã|Â|Ầ|Ấ|Ậ|Ẩ|Ẫ|Ă|Ằ|Ắ|Ặ|Ẳ|Ẵ/g, \"A\");" + "\n" +
+                " str = str.replace(/È|É|Ẹ|Ẻ|Ẽ|Ê|Ề|Ế|Ệ|Ể|Ễ/g, \"E\");" + "\n" +
+                "str = str.replace(/Ì|Í|Ị|Ỉ|Ĩ/g, \"I\");" + "\n" +
+                "str = str.replace(/Ò|Ó|Ọ|Ỏ|Õ|Ô|Ồ|Ố|Ộ|Ổ|Ỗ|Ơ|Ờ|Ớ|Ợ|Ở|Ỡ/g, \"O\");" + "\n" +
+                "str = str.replace(/Ù|Ú|Ụ|Ủ|Ũ|Ư|Ừ|Ứ|Ự|Ử|Ữ/g, \"U\");" + "\n" +
+                "str = str.replace(/Ỳ|Ý|Ỵ|Ỷ|Ỹ/g, \"Y\");" + "\n" +
+                "str = str.replace(/Đ/g, \"D\");" + "\n" +
+                "str = str.replace(/\u0300|\u0301|\u0303|\u0309|\u0323/g, \"\");" + "\n" +
+                "str = str.replace(/\u02C6|\u0306|\u031B/g, \"\");" + "\n" +
+                " str = str.replace(/\\s+/g, '');" + "\n" +
+                "return str;" + "\n" +
+                " }" + "\n" +
+                " </script>" + "\n";
+
 
 
             str = str + "</body>\n" +
