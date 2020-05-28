@@ -87,8 +87,49 @@ namespace backupckeckpoint
 
         public string taoFileBackUp(List<UidAndName> listUiD)
         {
-            var str = "<!DOCTYPE html> <html lang = \"en\" ><head><meta charset = \"UTF-8\" ><meta name = \"viewport\" content = \"width=device-width, initial-scale=1.0\"><script src = \"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script> <title> Document </title></head>";
-            str = str + "<body></body></html>";
+            var str = "<!DOCTYPE html>\n <html lang = \"en\" >\n" +
+                "<head>\n <meta charset = \"UTF-8\" ><meta name = \"viewport\" content = \"width=device-width, initial-scale=1.0\"> \n" +
+                "<script src = \"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>\n" +
+                " <title> Document </title>" +
+                "</head>\n";
+            str = str + "<body>" +
+                 "<textarea id=\"userName\" rows=\"4\" cols=\"50\"> </textarea> \n" +
+                 "<button onclick=\"laygiatri()\">Tìm kiếm</button>\n";
+
+            listUiD.ForEach(x =>
+           {
+               str = str + "<div class=\"user\">\n";
+               str = str + "<img src=\"http://graph.facebook.com/" + x.Uid + "/picture?type=large\">\n";
+               str = str + "<a href=\"https://www.facebook.com/" + x.Uid + "\" target=\"_blank\" class=\"tinh\">" + x.Name + "</a>\n" +
+               "</div>\n";
+           });
+
+
+            // ddoanj scrip
+            str = str + "function laygiatri() {\n" +
+                "var input = $('#userName').val();" + "\n" +
+                "if (bodau(input) != '') {" + "\n" +
+                "var listUserFind = input.split('\n');" + "\n" +
+                "var listUserFindTrim = [];" + "\n" +
+                "for (let i = 0; i < listUserFind.length; i++) {" + "\n" +
+                "listUserFindTrim.push(bodau(listUserFind[i]).toUpperCase(0));" + "\n" +
+                "}" + "\n" +
+                "var listUser = $('.user').attr(\"hidden\", true);" + "\n" +
+                "var list = $('.user').find('.tinh');" + "\n" +
+                "for (let i = 0; i < list.length; i++) {" + "\n" +
+                "if (listUserFindTrim.includes(bodau(list[i].textContent).toUpperCase())) {" + "\n" +
+                "listUser[i].removeAttribute('hidden')" + "\n" +
+                "}" + "\n" +
+                "}" + "\n" +
+                "} else {" + "\n" +
+                "var listUser = $('.user').removeAttr(\"hidden\");" + "\n" +
+                "}" + "\n" +
+                "}" + "\n";
+
+
+            str = str + "</body>\n" +
+               "</html>";
+
             return str;
         }
     }
