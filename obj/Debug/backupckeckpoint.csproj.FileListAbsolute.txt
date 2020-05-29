@@ -40,3 +40,17 @@ C:\Users\Vu Tinh\Desktop\backup_checkpoint\backupcheckpoint\obj\Debug\backupckec
 C:\Users\Vu Tinh\Desktop\backup_checkpoint\backupcheckpoint\obj\Debug\backupckeckpoint.csproj.GenerateResource.cache
 C:\Users\Vu Tinh\Desktop\backup_checkpoint\backupcheckpoint\obj\Debug\backupckeckpoint.exe
 C:\Users\Vu Tinh\Desktop\backup_checkpoint\backupcheckpoint\obj\Debug\backupckeckpoint.pdb
+C:\Users\Vu Tinh\Desktop\backupcheckpoint\bin\Debug\backupckeckpoint.exe.config
+C:\Users\Vu Tinh\Desktop\backupcheckpoint\bin\Debug\backupckeckpoint.exe
+C:\Users\Vu Tinh\Desktop\backupcheckpoint\bin\Debug\backupckeckpoint.pdb
+C:\Users\Vu Tinh\Desktop\backupcheckpoint\obj\Debug\backupckeckpoint.csprojAssemblyReference.cache
+C:\Users\Vu Tinh\Desktop\backupcheckpoint\obj\Debug\MainWindow.g.cs
+C:\Users\Vu Tinh\Desktop\backupcheckpoint\obj\Debug\App.g.cs
+C:\Users\Vu Tinh\Desktop\backupcheckpoint\obj\Debug\backupckeckpoint_MarkupCompile.cache
+C:\Users\Vu Tinh\Desktop\backupcheckpoint\obj\Debug\backupckeckpoint_MarkupCompile.lref
+C:\Users\Vu Tinh\Desktop\backupcheckpoint\obj\Debug\MainWindow.baml
+C:\Users\Vu Tinh\Desktop\backupcheckpoint\obj\Debug\backupckeckpoint.g.resources
+C:\Users\Vu Tinh\Desktop\backupcheckpoint\obj\Debug\backupckeckpoint.Properties.Resources.resources
+C:\Users\Vu Tinh\Desktop\backupcheckpoint\obj\Debug\backupckeckpoint.csproj.GenerateResource.cache
+C:\Users\Vu Tinh\Desktop\backupcheckpoint\obj\Debug\backupckeckpoint.exe
+C:\Users\Vu Tinh\Desktop\backupcheckpoint\obj\Debug\backupckeckpoint.pdb
