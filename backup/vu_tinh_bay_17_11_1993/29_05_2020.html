@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+ <html lang = "en" >
+<head>
+ <meta charset = "UTF-8" ><meta name = "viewport" content = "width=device-width, initial-scale=1.0"> 
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <title> Document </title></head>
+<body><textarea id="userName" rows="4" cols="50"> </textarea> 
+<button onclick="laygiatri()">Tìm kiếm</button>
+function laygiatri() {
+var input = $('#userName').val();
+if (bodau(input) != '') {
+var listUserFind = input.split('
+');
+var listUserFindTrim = [];
+for (let i = 0; i < listUserFind.length; i++) {
+listUserFindTrim.push(bodau(listUserFind[i]).toUpperCase(0));
+}
+var listUser = $('.user').attr("hidden", true);
+var list = $('.user').find('.tinh');
+for (let i = 0; i < list.length; i++) {
+if (listUserFindTrim.includes(bodau(list[i].textContent).toUpperCase())) {
+listUser[i].removeAttribute('hidden')
+}
+}
+} else {
+var listUser = $('.user').removeAttr("hidden");
+}
+}
+</body>
+</html>
