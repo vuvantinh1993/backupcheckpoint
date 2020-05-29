@@ -4,12 +4,20 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\Vu Tinh\Desktop\backupcheckpoint\obj\Debug\
+=======
+C:\Users\TINHVU\Desktop\backupcheckpoint\obj\Debug\
+>>>>>>> b55a28635e13c00209a1a230be619068e1c0c39c
 backupckeckpoint
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\Vu Tinh\Desktop\backupcheckpoint\App.xaml
+=======
+C:\Users\TINHVU\Desktop\backupcheckpoint\App.xaml
+>>>>>>> b55a28635e13c00209a1a230be619068e1c0c39c
 11151548125
 
 5-2017746502
